@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>फन सायन्स गॅलरी </title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#d8cfce;
+    font-family:Arial,sans-serif;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#222;
+    font-size:50px;
+    margin-bottom:12px;
+}
+
+/* Language Buttons */
+
+.language-buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:25px;
+    flex-wrap:wrap;
+     margin-top:30px;
+}
+
+.language-buttons a{
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.language-buttons a:hover{
+    background:#1d4ed8;
+}
+
+/* Main Container */
+
+.gallery-box{
+    width:100%;
+    max-width:1500px;
+    margin:auto;
+}
+
+/* Cards Grid */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:18px;
+}
+
+/* Cards */
+
+.card{
+    text-decoration:none;
+    background:white;
+    color:#222;
+
+    min-height:100px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding: 12px;
+
+    border-radius:12px;
+
+    font-size:16px;
+    font-weight:bold;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.12);
+
+    transition:.25s;
+    margin-top:20px;
+
+
+    
+}
+
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+/* Did You Know */
+
+.did-you-know{
+    text-align:center;
+    margin-top:2px;
+}
+
+.did-you-know a{
+    text-decoration:none;
+    background:#16a34a;
+    color:white;
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    font-size:20px;
+    font-weight:bold;
+
+    transition:.3s;
+    margin-top:20px;
+}
+
+.did-you-know a:hover{
+    background:#15803d;
+
+}
+
+/* Tablet */
+
+@media(max-width:1100px){
+
+.gallery-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+h1{
+    font-size:32px;
+}
+
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+.card{
+    min-height:80px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<h1> फन सायन्स गॅलरी</h1>
+
+<div class="language-buttons">
+    <a href="index.html">English</a>
+    <a href="index-hindi.html">हिन्दी</a>
+    <a href="index-marathi.html">मराठी</a>
+</div>
+
+<div class="gallery-box">
+
+    <div class="gallery-grid">
+
+        <a class="card" href="marathihtml/marathigrand-shuttle.html">
+            ग्रैंड शटल
+
+        </a>
+
+        <a class="card" href="marathihtml/marathilinear-perspective.html">
+            रेखीय परिदृश्य
+
+        </a>
+
+        <a class="card" href="marathihtml/marathitopo-terrain.html">
+            टोपो टेरेन
+
+        </a>
+
+        <a class="card" href="marathihtml/marathihow-fast-you-are.html">
+            तुम्ही किती वेगवान आहात?
+
+
+        </a>
+
+        <a class="card" href="marathihtml/marathihumming-the-song.html">
+            गाणे गुणगुणणे
+        </a>
+
+        <a class="card" href="marathihtml/marathirock-paper-scissor.html">
+            रॉक-पेपर-सिझर
+        </a>
+
+        <a class="card" href="marathihtml/marathimagnus.html">
+            मॅग्नस इफेक्ट - क्रिकेटचा चेंडू कसा स्विंग होतो?
+        </a>
+
+        <a class="card" href="marathihtml/marathidynamometer.html">
+           कार्यरत स्नायू - डायनॅमोमीटर
+        </a>
+
+        <a class="card" href="marathihtml/marathilungs.html">
+            फुफ्फुसे
+        </a>
+
+        <a class="card" href="marathihtml/marathipredictive.html">
+            भविष्यसूचक विश्लेषण
+
+        </a>
+
+           <a class="card" href="marathihtml/marathireflex.html">
+            प्रतिक्षिप्त क्रिया
+
+        </a>
+
+
+    
+        <a class="card" href="marathihtml/marathibalance.html">
+           स्वतःला संतुलित करा
+
+        </a>
+
+        <a class="card" href="marathihtml/marathikaleidoscope.html">
+           डिजिटल कॅलिडोस्कोप
+
+
+        </a>
+
+        <a class="card" href="marathihtml/marathiready.html">
+            तयार, सज्ज, थांबा!
+
+        </a>
+
+        <a class="card" href="marathihtml/marathitarget.html">
+            लक्ष्य नेमबाजी आव्हान
+        </a>
+
+    </div>
+
+    <div class="did-you-know">
+        <a href="marathihtml/marathidid-you-know.html">
+            तुम्हाला माहीत आहे का?- मजेदार विज्ञान तथ्ये
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

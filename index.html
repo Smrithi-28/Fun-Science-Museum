@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fun Science Museum</title>
+<title>Fun Science Gallery</title>
 
 <style>
-/* RESET */
+
 *{
     margin:0;
     padding:0;
@@ -14,135 +14,235 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
     background:#d8cfce;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    font-family:Arial,sans-serif;
     padding:20px;
 }
 
-/* MAIN WRAPPER */
-.container{
-    width:100%;
-    max-width:1200px;
-    text-align:center;
-}
-
-/* TITLE */
 h1{
-    font-size:clamp(32px, 5vw, 72px);
-    font-weight:900;
+    text-align:center;
+    color:#222;
+    font-size:50px;
+    margin-bottom:12px;
+}
+
+/* Language Buttons */
+
+.language-buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
     margin-bottom:25px;
-    color:#000;
+    flex-wrap:wrap;
+     margin-top:30px;
 }
 
-/* BOX */
+.language-buttons a{
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.language-buttons a:hover{
+    background:#1d4ed8;
+}
+
+/* Main Container */
+
 .gallery-box{
-    background:#d8cfce;
-    border:4px solid #f2f2f2;
-    border-radius:25px;
-    padding:clamp(15px, 3vw, 40px);
+    width:100%;
+    max-width:1500px;
+    margin:auto;
 }
 
-/* GRID */
+/* Cards Grid */
+
 .gallery-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
-    gap:20px;
+    grid-template-columns:repeat(5,1fr);
+    gap:18px;
 }
 
-/* CARD */
+/* Cards */
+
 .card{
-    background:#fff;
     text-decoration:none;
-    color:#000;
-    border-radius:18px;
-    padding:20px;
-    font-size:clamp(16px, 2vw, 24px);
-    font-weight:700;
-    transition:0.3s ease;
+    background:white;
+    color:#222;
+
+    min-height:100px;
+
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100px;
+
+    text-align:center;
+
+    padding: 12px;
+
+    border-radius:12px;
+
+    font-size:16px;
+    font-weight:bold;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.12);
+
+    transition:.25s;
+    margin-top:20px;
+
+
+    
 }
+
 
 .card:hover{
-    transform:translateY(-5px) scale(1.03);
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transform:translateY(-4px);
 }
 
-/* BOTTOM LINK */
+/* Did You Know */
+
 .did-you-know{
-    margin-top:25px;
+    text-align:center;
+    margin-top:10px;
 }
 
 .did-you-know a{
     text-decoration:none;
-    color:#000;
-    font-size:clamp(18px, 2.5vw, 34px);
-    font-weight:800;
+    background:#16a34a;
+    color:white;
+
     display:inline-block;
-    transition:0.3s;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    font-size:20px;
+    font-weight:bold;
+
+    transition:.3s;
+    margin-top:20px;
 }
 
 .did-you-know a:hover{
-    color:#444;
+    background:#15803d;
+
 }
 
-/* MOBILE FIX */
-@media (max-width:600px){
-    .gallery-grid{
-        grid-template-columns:1fr;
-    }
+/* Tablet */
+
+@media(max-width:1100px){
+
+.gallery-grid{
+    grid-template-columns:repeat(3,1fr);
 }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+h1{
+    font-size:32px;
+}
+
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+.card{
+    min-height:80px;
+}
+
+}
+
 </style>
 </head>
-
 <body>
 
-<div class="container">
+<h1> Fun Science Gallery</h1>
 
-    <h1>Fun Science Museum</h1>
+<div class="language-buttons">
+    <a href="index.html">English</a>
+    <a href="index-hindi.html">हिन्दी</a>
+    <a href="index-marathi.html">मराठी</a>
+</div>
 
-    <div class="gallery-box">
+<div class="gallery-box">
 
-        <div class="gallery-grid">
+    <div class="gallery-grid">
 
-            <a class="card" href="grand-shuttle.html">
-                Grand Shuttle
-            </a>
+        <a class="card" href="grand-shuttle.html">
+            Grand Shuttle
+        </a>
 
-            <a class="card" href="linear-perspective.html">
-                Linear Perspective
-            </a>
+        <a class="card" href="linear-perspective.html">
+            Linear Perspective
+        </a>
 
-            <a class="card" href="topo-terrain.html">
-                Topo Terrain
-            </a>
+        <a class="card" href="topo-terrain.html">
+            Topo Terrain
+        </a>
 
-            <a class="card" href="how-fast-you-are.html">
-                How Fast You Are?
-            </a>
+        <a class="card" href="how-fast-you-are.html">
+            How Fast You Are?
+        </a>
 
-            <a class="card" href="humming-the-song.html">
-                Humming The Song
-            </a>
+        <a class="card" href="humming-the-song.html">
+            Humming The Song
+        </a>
 
-            <a class="card" href="rock-paper-scissor.html">
-                Rock-Paper-Scissor
-            </a>
+        <a class="card" href="rock-paper-scissor.html">
+            Rock-Paper-Scissor
+        </a>
 
-        </div>
+        <a class="card" href="magnus.html">
+            Magnus Effect - How Cricket Ball Swings?
+        </a>
 
-        <div class="did-you-know">
-            <a href="did-you-know.html">
-                Did You Know? - Fun Science Facts
-            </a>
-        </div>
+        <a class="card" href="dynamometer.html">
+            Muscle At Work - Dynamometer
+        </a>
 
+        <a class="card" href="lungs.html">
+            Lungs
+        </a>
+
+        <a class="card" href="predictive.html">
+            Predictive Analysis
+        </a>
+
+        <a class="card" href="reflex.html">
+            Reflex Action
+        </a>
+
+        <a class="card" href="balance.html">
+            Balance Yourself
+        </a>
+
+        <a class="card" href="kaleidoscope.html">
+            Digital Kaleidoscope
+        </a>
+
+        <a class="card" href="ready.html">
+            Ready, Set, Stop!
+        </a>
+
+        <a class="card" href="target.html">
+            Target Shooting Challenge
+        </a>
+
+    </div>
+
+    <div class="did-you-know">
+        <a href="did-you-know.html">
+            Did You Know? - Fun Science Facts
+        </a>
     </div>
 
 </div>
